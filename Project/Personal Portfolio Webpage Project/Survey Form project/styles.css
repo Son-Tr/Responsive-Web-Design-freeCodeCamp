@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: inline-block;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+.container {
+    margin: 0 10rem;
+    padding: 12vh 0;
+    /* height: 96vh; */
+    /* min-height: fit-content; */
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    transition: 0, 3s;
+}
+
+.btn:hover {
+    background: rgb(53, 53, 53);
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    height: 17vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+#navbar {
+    display: flex;
+    gap: 2rem;
+}
+
+#navbar span {
+    font-size: 1.5rem;
+}
+
+#navbar span a {
+    color: black;
+    position: relative;
+}
+
+#navbar span a::before {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+#navbar span:hover a::before {
+    width: 100%;
+}
+
+.hamburger-icon {
+    display: none;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+/* welcome */
+#welcome-section .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 96vh;
+}
+
+#welcome-section h3 {
+    text-align: center;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+}
+
+.welcome-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#welcome-section p {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.welcome-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.welcome-btn .btn:hover a {
+    color: white;
+}
+
+.socials-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.socials-icon img {
+    height: 2rem;
+    height: 2rem;
+}
+
+/* about */
+.about-title {
+    text-align: center;
+    margin: 2rem;
+}
+
+.about-body {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-body .about-img {
+    margin: 0 auto 2rem;
+}
+
+.about-body .about-img img {
+    border-radius: 2rem;
+    width: 275px;
+    height: 275px;
+}
+
+/* Projects */
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.project-title {
+    text-align: center;
+    margin: 2rem
+}
+
+.project-card {
+    text-align: center;
+    padding: 1.5rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    border-radius: 2rem;
+    background: rgb(250, 250, 250);
+}
+
+
+.project-img img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-tile h1 {
+    margin: 1rem;
+    color: black;
+}
+
+.project-card .btn {
+    margin: 1rem;
+    color: black;
+    display: inline-block;
+
+}
+
+.project-card .btn:hover {
+    color: white;
+}
+
+/* contracts */
+
+.contact-title {
+    text-align: center;
+}
+
+.contact-link {
+    display: flex;
+    justify-content: center;
+    
+    margin: 2rem 10rem;
+    gap: 2rem;
+}
+
+.contact-link img {
+    height: 2.5rem;
+}
+
+.contact-email,
+.contact-linkedin {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.contact-linkedin img {
+    height: 2.1rem;
+    overflow: hidden;
+}
+
+.contact-link .link{
+    transition: 0.5s;
+}
+
+.contact-link .link:hover{
+    border-bottom:  0.1rem solid rgb(163, 163, 163);
+}
+
+.contact-link .link:hover a{
+    color: rgb(163, 163, 163);
+}
+
+/* footer */
+
+footer{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+
+/* media query */
+/* tablet */
+@media screen and (max-width: 1023px) {
+    .container{ 
+        margin: 0 8rem;
+    }
+    .about-body {
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .project-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .project-card:last-child{
+        grid-column: 1/3;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .about-body {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    .container{
+        margin: 0 4rem;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        margin: 0 2rem;
+    }
+    .about-body {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-link{
+        margin: 2rem 7rem 
+    }
+
+    .grid-mobile{
+        display:flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .contact-linkedin{
+        width: 50%;
+        margin: auto;
+    }
+}
