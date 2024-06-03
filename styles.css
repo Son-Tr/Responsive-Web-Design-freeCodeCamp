@@ -16,14 +16,17 @@ a{
     text-decoration: none;
 }
 
-.container{
 
+
+.container{
+    width: 780px;
+    margin: auto;
 }
 
 #title{
     text-align: center;
     font-size: 48px;
-    margin: 69.6px 0 0.6rem ;
+    margin: 69.6px 0 0.6rem  ;
     color: #f5f6f7;
 }
 
@@ -40,12 +43,14 @@ a{
 .list-lesson .item{
     padding: 18px 15px;
     cursor: pointer;
-    /* background-color: ; */
+    width: 100%;
+    background-color: #0A0A23;
 }
 
 .lesson{
     font-size: 20px;
     padding: 18px 0;
     text-align: center;
-
 }
+
+/* @media screen and (max-width:) */
