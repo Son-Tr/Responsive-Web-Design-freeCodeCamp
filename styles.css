@@ -53,4 +53,9 @@ a{
     text-align: center;
 }
 
-/* @media screen and (max-width:) */
+@media screen and (max-width:1200px){
+    .container{
+        width: 647px;
+        
+    }
+}
