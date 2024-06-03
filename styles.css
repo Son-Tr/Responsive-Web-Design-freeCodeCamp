@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body, html{
+    background-color: rgb(27, 27, 50);
+    font-family:"Lato", sans-serif;
+
+}
+
+a{
+    color: #f5f6f7;
+    text-decoration: none;
+}
+
+.container{
+
+}
+
+#title{
+    text-align: center;
+    font-size: 48px;
+    margin: 69.6px 0 0.6rem ;
+    color: #f5f6f7;
+}
+
+.list-lesson{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding:  0 15px;
+
+}
+
+.list-lesson .item{
+    padding: 18px 15px;
+    cursor: pointer;
+    /* background-color: ; */
+}
+
+.lesson{
+    font-size: 20px;
+    padding: 18px 0;
+    text-align: center;
+
+}
