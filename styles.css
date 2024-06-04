@@ -24,6 +24,14 @@ a{
     margin: auto;
 }
 
+.cert-header-icon{
+    display: block;
+    height: 120px;
+    width:120px;
+    color: #f5f6f7;
+    margin: auto;
+}
+
 #title{
     text-align: center;
     font-size: 48px;
@@ -54,6 +62,22 @@ a{
     font-size: 20px;
     padding: 18px 0;
     text-align: center;
+}
+
+.project .background-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+.certification{
+    background-color: #002ead;
+    padding:8px
+}
+
+.name-project{
+    margin-top: 1rem;
 }
 
 @media screen and (max-width:1200px){
