@@ -49,11 +49,18 @@ a{
 
 }
 
-.list-lesson .item{
+.item{
     cursor: pointer;
     width: 100%;
     background-color: #0A0A23;
+    transition: 0.3s;
 }
+
+.item:hover{
+    background-color: #2a2a40; 
+}
+
+
 .background-item{
     padding: 18px 15px;
 }
@@ -82,6 +89,14 @@ a{
 .btn{
     text-align: center;
     border: 1px solid  #f5f6f7;
+    
+}
+.item.btn:hover{
+    background-color: #fff;
+}
+
+.item.btn:hover a{
+    color: #0A0A23;
 }
 
 .btn .lesson{
