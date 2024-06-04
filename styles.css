@@ -78,6 +78,14 @@ a{
 
 .name-project{
     margin-top: 1rem;
+} 
+.btn{
+    text-align: center;
+    border: 1px solid  #f5f6f7;
+}
+
+.btn .lesson{
+    padding: 8rem 0;
 }
 
 @media screen and (max-width:1200px){
